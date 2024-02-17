@@ -1,0 +1,58 @@
+.footer{
+    margin-top: 50px;
+    position: relative;
+    width: 1500px;
+    height: 110px;
+    display: flexbox;
+    background-color: black;
+}
+.footer-logo{
+    height: 55px;
+    position: absolute;
+    top:5px;
+    left:650px;
+}
+.location{
+    font-family: Inter;
+    color: white;
+    font-size: 15px;
+    font-weight: 900;
+    font-style: italic;
+    position: absolute;
+    top:75px;
+    left: 580px;
+}
+.social{
+    position: absolute;
+    height: 35px;
+    right:50px;
+    bottom:25px;
+}
+.follow{
+    font-family: Inter;
+    color: white;
+    font-size: 15px;
+    font-weight: 900;
+    font-style: italic;
+    position: absolute;
+    right:140px;
+    bottom:72px;
+}
+.mail-logo{
+    height: 37px;
+    position: absolute;
+    left:350px;
+    top:20px;
+
+}
+.mail-contact{
+    font-family: Inter;
+    color: white;
+    font-size: 15px;
+    font-weight: 900;
+    font-style: italic;
+    position: absolute;
+    left: 220px;
+    top:26px;
+    width: 125px;
+}

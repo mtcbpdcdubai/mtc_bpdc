@@ -1,0 +1,632 @@
+html{
+  scroll-behavior: smooth;
+}
+body{
+  margin: 0%;
+  width: 100%;
+}
+/*header*/
+.navbar{
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1%;
+}
+.left-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  padding: 1% 0% ; 
+  padding-left: 3%;
+}
+.left-section img{
+  height: 110px;
+  margin-right: 2px;
+}
+.left-section span{
+  font-size: 50px;
+  font-family: Rubik;
+}
+
+.right-section{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.right-section ul{
+  font-family: Rubik;
+  font-size: 20px;
+  padding: 0px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.right-section ul li{
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+}
+
+.right-section ul li a{
+  text-decoration: none;
+  color: #000000;
+  padding: 5px 0;
+  font-size: 26px;
+}
+.right-section ul li a:hover{
+  color: #267fdd;
+  border-bottom:3px solid #267fdd;
+  padding-bottom: 5px;
+}
+
+label #sidebar_btn, label #cancel{
+  color: #000000;
+  font-size: 32px;
+  margin-right: 40px;
+  line-height: 80px;
+  cursor: pointer;
+  display: none;
+  float: right;
+  right: 15%;
+}
+#check{
+  display: none;
+}
+
+
+/*body*/
+
+.middle-section {
+  
+  position: relative;
+  text-align: center;
+}
+
+.middle-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Adjust the last value (0.5) for the desired transparency */
+}
+.middle-section img {
+  width: 100%; /* Make the image cover the entire container */
+  height: auto;
+  display: block;   
+}
+
+.middle-section ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  width: 70%;
+  top: 50%; /* Adjust as needed */
+  left: 50%; /* Adjust as needed */
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+
+.middle-section ul li {
+  margin: 0px 0px; /* Adjust as needed to add space between elements */
+}
+
+.middle-section ul li img {
+  height: 80px; /* Adjust the max width of the logo */
+  height: auto;
+}
+
+.fullname {
+  color: white; /* Adjust text color */
+  font-size: 100px; /* Adjust font size */
+  margin: 0; /* Remove default margin */
+  text-align: center;
+  font-family: Inter;
+  font-style: italic;
+}
+
+.gal{
+  padding: 0% 2%;
+  justify-items: center;
+}
+.gal h1{
+  font-size: 40px;
+  font-family: Inter;
+  font-weight: bold;
+  text-align: center;
+  margin: 2% 0%;
+}
+.gal img{
+  height: 250px;
+  margin: 0.5% 0.5%;
+  transition: 0.2s;
+}
+.gal img:hover{
+  transform: scale(1.5,1.5);
+  border: 2px solid #5e5958;
+  box-shadow: 0 0 10px #5e5958;
+  
+}
+
+
+/*footer*/
+.footer{
+  position: relative; 
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(0, 0, 0);
+  bottom: 0; 
+
+  z-index: 10;
+  
+}
+.footer div{
+  flex-grow: 1;
+  text-align: center;
+  color: #ffffff;
+  font-size: 24px;
+  font-family: Inter;
+}
+.footer div ul li{
+  list-style: none;
+}
+.mail-contact{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.mail-contact ul{
+padding: 0%;
+margin: 0%;
+}
+.mail-contact a{
+  color: #ffffff; 
+}
+.location{
+width: 40%;
+}
+.location ul{
+padding: 0%;
+display: flex;
+flex-direction: column;
+}
+
+.location img{
+  width: 35%;
+}
+
+.location li{
+  font-size: 16px;
+}
+.follow{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.follow ul{
+padding: 0%;
+}
+
+.follow i{
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+/*
+
+*/
+
+@media (max-width: 1406px){
+  .navbar{
+      width: 100%;
+  }
+  .left-section img{
+      left: 1%;
+  }
+  .left-section span{
+      font-size: 35px;
+  }
+  .left-section img{
+      height: 70px;
+  }
+  
+  .right-section ul li{
+    padding: 0px 12px;
+    
+  }
+  
+}
+
+@media (max-width: 1240px){
+  label #sidebar_btn{
+    display: block;
+  }
+  .left-section{
+    padding-left: 5%;
+  }
+  .left-section img{
+    height: 100px;
+  }
+  .left-section span{
+    font-size: 50px;
+  }
+  .right-section ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #ffffff;
+    margin: 0;
+    padding: 0;
+    top: 100px;
+    left: -100%;
+    text-align: center;
+    font-size: 16px;
+    z-index: 1;
+  }
+
+  .right-section ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  .right-section ul li a{
+      font-size: 26px;
+  }
+  #check:checked +label ~ ul{
+    left: 0%;
+  }
+  #check:checked + label #sidebar_btn {
+    display: none;
+  }
+
+  #check:checked + label #cancel {
+      display: block;
+  }
+
+  #check:not(:checked) + label #sidebar_btn {
+      display: block;
+  }
+
+  #check:not(:checked) + label #cancel {
+      display: none;
+  }
+  .footer{
+    display: grid;
+    flex-direction: column;
+    height: 100%;
+  }
+  .footer div ul li{
+    font-size: 32px;
+    text-align: center;
+  }
+  .location{
+    display: none;
+  }
+  .follow i{
+    font-size: 40px;
+  }
+  .footer{
+    display: grid;
+    flex-direction: column;
+    height: 100%;
+  }
+  .footer div ul li{
+    font-size: 32px;
+    text-align: center;
+  }
+  .location{
+    display: none;
+  }
+  .follow i{
+    font-size: 30px;
+  }
+  .fullname{
+    font-size: 70px;
+  }
+  .logo{
+    height: 50px;
+  }
+}
+
+@media (max-width: 800px){
+  label #sidebar_btn{
+    display: block;
+  }
+  .left-section{
+    padding-left: 5%;
+  }
+  .left-section img{
+    height: 100px;
+  }
+  .left-section span{
+    font-size: 50px;
+  }
+  .right-section ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #ffffff;
+    margin: 0;
+    padding: 0;
+    top: 100px;
+    left: -100%;
+    text-align: center;
+    font-size: 16px;
+    z-index: 1;
+  }
+
+  .right-section ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  .right-section ul li a{
+      font-size: 26px;
+  }
+  #check:checked +label ~ ul{
+    left: 0%;
+  }
+  #check:checked + label #sidebar_btn {
+    display: none;
+  }
+
+  #check:checked + label #cancel {
+      display: block;
+  }
+
+  #check:not(:checked) + label #sidebar_btn {
+      display: block;
+  }
+
+  #check:not(:checked) + label #cancel {
+      display: none;
+  }
+  .footer{
+    display: grid;
+    flex-direction: column;
+    height: 100%;
+  }
+  .footer div ul li{
+    font-size: 32px;
+    text-align: center;
+  }
+  .location{
+    display: none;
+  }
+  .follow i{
+    font-size: 40px;
+  }
+  .footer{
+    display: grid;
+    flex-direction: column;
+    height: 100%;
+  }
+  .footer div ul li{
+    font-size: 32px;
+    text-align: center;
+  }
+  .location{
+    display: none;
+  }
+  .follow i{
+    font-size: 30px;
+  }
+  .fullname{
+    font-size: 50px;
+  }
+  .logo{
+    height: 50px;
+  }
+  .gal img{
+      height: 200px;
+  }
+}
+
+@media (max-width: 710px){
+  label #sidebar_btn{
+    display: block;
+  }
+  .left-section{
+    padding-left: 5%;
+  }
+  .left-section img{
+    height: 100px;
+  }
+  .left-section span{
+    font-size: 50px;
+  }
+  .right-section ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #ffffff;
+    margin: 0;
+    padding: 0;
+    top: 100px;
+    left: -100%;
+    text-align: center;
+    font-size: 16px;
+    z-index: 1;
+  }
+
+  .right-section ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  .right-section ul li a{
+      font-size: 26px;
+  }
+  #check:checked +label ~ ul{
+    left: 0%;
+  }
+  #check:checked + label #sidebar_btn {
+    display: none;
+  }
+
+  #check:checked + label #cancel {
+      display: block;
+  }
+
+  #check:not(:checked) + label #sidebar_btn {
+      display: block;
+  }
+
+  #check:not(:checked) + label #cancel {
+      display: none;
+  }
+  .footer{
+    display: grid;
+    flex-direction: column;
+    height: 100%;
+  }
+  .footer div ul li{
+    font-size: 32px;
+    text-align: center;
+  }
+  .location{
+    display: none;
+  }
+  .follow i{
+    font-size: 40px;
+  }
+  .footer{
+    display: grid;
+    flex-direction: column;
+    height: 100%;
+  }
+  .footer div ul li{
+    font-size: 32px;
+    text-align: center;
+  }
+  .location{
+    display: none;
+  }
+  .follow i{
+    font-size: 30px;
+  }
+  .fullname{
+    font-size: 30px;
+  }
+  .logo{
+    height: 15px;
+  }
+  .middle-section ul{
+      height: 100%;
+  }
+  .gal img{
+      height: 175px;
+  }
+}
+
+@media (max-width: 420px){
+  label #sidebar_btn{
+    display: block;
+  }
+  .left-section{
+    padding-left: 5%;
+  }
+  .left-section img{
+    height: 100px;
+  }
+  .left-section span{
+    font-size: 50px;
+  }
+  .right-section ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #ffffff;
+    margin: 0;
+    padding: 0;
+    top: 100px;
+    left: -100%;
+    text-align: center;
+    font-size: 16px;
+    z-index: 1;
+  }
+
+  .right-section ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  .right-section ul li a{
+      font-size: 26px;
+  }
+  #check:checked +label ~ ul{
+    left: 0%;
+  }
+  #check:checked + label #sidebar_btn {
+    display: none;
+  }
+
+  #check:checked + label #cancel {
+      display: block;
+  }
+
+  #check:not(:checked) + label #sidebar_btn {
+      display: block;
+  }
+
+  #check:not(:checked) + label #cancel {
+      display: none;
+  }
+  .footer{
+    display: grid;
+    flex-direction: column;
+    height: 100%;
+  }
+  .footer div ul li{
+    font-size: 22px;
+    text-align: center;
+  }
+  .location{
+    display: none;
+  }
+  .follow i{
+    font-size: 40px;
+  }
+  .footer{
+    display: grid;
+    flex-direction: column;
+    height: 100%;
+  }
+  .footer div ul li{
+    font-size: 22px;
+    text-align: center;
+  }
+  .location{
+    display: none;
+  }
+  .follow i{
+    font-size: 30px;
+  }
+  .fullname{
+    font-size: 22px;
+  }
+  .logo{
+    height: 8px;
+  }
+  .gal img{
+      height: 120px;
+  }
+}

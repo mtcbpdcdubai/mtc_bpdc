@@ -1,0 +1,34 @@
+.header{
+    height: 175px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.left-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 40px;
+}
+.mtc-logo{
+    height: 110px;
+    margin-right: 20px;
+}
+.name{
+    font-size: 90px;
+    font-family: Rubik;
+}
+
+.right-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.right-section div{
+    font-family: Rubik;
+    font-size: 30px;
+    padding-right: 50px;
+    font-weight: bold;
+}
