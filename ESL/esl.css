@@ -1,0 +1,809 @@
+html{
+  scroll-behavior: smooth;
+}
+body{
+    margin: 0%;
+    width: 100%;
+    font-family: Reem Kufi;
+}
+.navbar{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1%;
+}
+.left-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    padding: 1% 0% ; 
+    padding-left: 3%;
+    
+}
+.left-section img{
+    height: 110px;
+    margin-right: 2px;
+}
+.left-section span{
+    font-size: 50px;
+    font-family: Rubik;
+}
+
+.right-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 100px;
+
+}
+.right-section ul{
+    font-family: Rubik;
+    font-size: 20px;
+    padding: 0px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.right-section ul li{
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+}
+
+.right-section ul li a{
+    text-decoration: none;
+    color: #000000;
+    padding: 5px 0;
+    font-size: 26px;
+}
+.right-section ul li a:hover{
+    color: #267fdd;
+    border-bottom:3px solid #267fdd;
+    padding-bottom: 5px;
+}
+
+label #sidebar_btn, label #cancel{
+    color: #000000;
+    font-size: 32px;
+    margin-right: 40px;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+    float: right;
+    right: 15%;
+}
+#check{
+    display: none;
+}
+
+.top-image {
+    
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 100px;
+    font-family: Rubik;
+    display: grid;
+    padding: 10%;
+    position: relative;
+    
+    
+}
+.top-image::before{
+    content: ""; /* Create an empty pseudo-element */
+    position: absolute; /* Position the pseudo-element absolutely within the container */
+    background-image: url("eslimage.png");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.25; /* Adjust the opacity as needed */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+     /* White overlay with reduced opacity */
+}
+.top-image span{
+    color: rgb(0, 0, 0);
+    position: relative; /* Make sure the text is positioned relative to the container */
+    text-align: center;
+    animation: Dance 10s infinite;
+    
+}
+.top-image #esl{
+    color: #FFB900;
+    
+}
+@keyframes Dance {
+    0% {
+        transform: translateY(0.5rem);
+    }
+    25% {
+        transform: translateY(-0.5rem);
+    }
+    50% {
+        transform: translateY(0.5rem);
+    }
+    75% {
+        transform: translateY(-0.5rem);
+    }
+    100% {
+        transform: translateY(0.5rem);
+    }
+}
+.top-image img{
+   height: 20%;
+   width: 20%;
+}
+.top-image a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.top-image a:visited{
+    color: #ffffff;
+}
+
+.top-btn{
+    width: 20%;
+    height: 100%;
+    margin-top: 2%;
+    position: relative;
+    display: inline-block;
+    font-size: 30px; /* Adjust font size as needed */
+    font-weight: bold;
+    text-align: center;
+    background-color: #267fdd; /* Background color for the button */
+    color: #ffffff; /* Text color for the button */
+    border: none;
+    border-radius: 15px; /* Rounded corners for the button */
+    justify-self: center;
+    animation: Dance 10s infinite;
+}
+.top-btn:hover{
+    background-color: #181f27;
+    border-color: #0056b3;
+    opacity: 0.7;
+}
+.info{
+    background-color: rgb(255, 239, 191) ;
+    height: 100%;
+    padding: 5%;
+    padding-top: 5%;
+    font-family: Reem Kufi;
+    font-size: 30px;
+}
+.info ul{
+    margin: 0%;
+}
+.info #about-box{
+    display: flex;
+    
+}
+.info #about-box img{
+    margin-top: 20%;
+    margin-left: 10%;
+    height: 40%;
+    width: 30%;
+}
+.info #about-box span{
+    width: 50%;
+    padding: 5%;
+    background-color: rgb(255, 249, 234);
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+#esl-media{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  font-size: 5rem;
+  padding: 3%;
+}
+#esl-media li{
+  padding: 0px 20px;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("para-back.JPG");
+  
+    /* Set a specific height */
+    min-height: 500px; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+.parallax p{
+    text-align: center;
+    color: #ffffff;
+    font-size: 100px;
+    margin: 0%;
+    font-weight: bolder;
+   
+}
+
+.parallax a{
+    
+    font-size: 50px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: lighter;
+   
+
+}
+
+.parallax a:hover{
+    text-decoration: underline;
+    transition: 0.1ms smooth;
+}
+
+.sponsors{
+    text-align: center;
+    padding: 5%;
+    font-size: 40px;
+
+}
+
+.sponsors ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+}
+
+.sponsors ul img{
+    height: 90%;
+    margin-left: 5%;
+}
+
+.highlights{
+    background-color: rgb(255, 239, 191);
+    padding: 5%;
+    
+    font-size: 60px;
+    text-align: center;
+
+}
+.highlights ul{
+    list-style: none; /* Remove bullet points from the <ul> element */
+    padding: 0; /* Remove default padding */
+    display: inline-block; 
+}
+
+.highlights li {
+    display: inline-block; /* Center-align the <li> elements horizontally */
+    margin: 0px; /* Add spacing between the <li> elements (adjust as needed) */
+  }
+.highlights img{
+    height: 500px;
+}
+
+.highlights ul li img {
+    transition: opacity 0.5s;
+  }
+  
+  .highlights ul li img:hover {
+    opacity: 0.7; /* Adjust the opacity as desired */
+  }
+
+.highlights a{
+    display: inline-block;
+    background-color: #007BFF; /* Background color of the button */
+    color: #fff; /* Text color */
+    padding: 10px 20px; /* Padding for the button */
+    text-decoration: none; /* Remove underline on the link */
+    transition: background-color 0.3s; /* Add a smooth transition effect */
+    font-size: 30px;
+}
+
+.highlights a:hover {
+    background-color: transparent; /* New background color on hover */
+    border-color: #007BFF;
+    border: 2px solid #007BFF;
+    color: #007BFF;
+  }
+
+
+  .footer{
+    position: relative; 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(0, 0, 0);
+    bottom: 0; 
+  
+    z-index: 10;
+    
+}
+.footer div{
+    flex-grow: 1;
+    text-align: center;
+    color: #ffffff;
+    font-size: 24px;
+    font-family: Inter;
+}
+.footer div ul li{
+    list-style: none;
+}
+.mail-contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.mail-contact ul{
+  padding: 0%;
+  margin: 0%;
+}
+.mail-contact a{
+    color: #ffffff; 
+}
+.location{
+  width: 40%;
+}
+.location ul{
+  padding: 0%;
+  display: flex;
+  flex-direction: column;
+}
+
+.location img{
+    width: 35%;
+}
+
+.location li{
+    font-size: 16px;
+}
+.follow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.follow ul{
+  padding: 0%;
+}
+
+.follow i{
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+@media (max-width: 1510px){
+    .navbar{
+        width: 100%;
+    }
+    .left-section img{
+        left: 1%;
+    }
+    .left-section span{
+        font-size: 35px;
+    }
+    .left-section img{
+        height: 70px;
+    }
+    
+    .right-section ul li{
+      padding: 0px 12px;
+      
+    }
+    
+}
+
+@media (max-width: 1316px){
+    label #sidebar_btn{
+      display: block;
+    }
+    .left-section{
+      padding-left: 5%;
+    }
+    .left-section img{
+      height: 100px;
+    }
+    .left-section span{
+      font-size: 50px;
+    }
+    .right-section ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #ffffff;
+      margin: 0;
+      padding: 0;
+      top: 100px;
+      left: -100%;
+      text-align: center;
+      font-size: 16px;
+      z-index: 1;
+    }
+  
+    .right-section ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+  
+    .right-section ul li a{
+        font-size: 26px;
+    }
+    #check:checked +label ~ ul{
+      left: 0%;
+    }
+    #check:checked + label #sidebar_btn {
+      display: none;
+    }
+  
+    #check:checked + label #cancel {
+        display: block;
+    }
+  
+    #check:not(:checked) + label #sidebar_btn {
+        display: block;
+    }
+  
+    #check:not(:checked) + label #cancel {
+        display: none;
+    }
+    .footer{
+      display: grid;
+      flex-direction: column;
+      height: 100%;
+    }
+    .footer div ul li{
+      font-size: 32px;
+      text-align: center;
+    }
+    .location{
+      display: none;
+    }
+    .follow i{
+      font-size: 40px;
+    }
+    .footer{
+      display: grid;
+      flex-direction: column;
+      height: 100%;
+    }
+    .footer div ul li{
+      font-size: 32px;
+      text-align: center;
+    }
+    .location{
+      display: none;
+    }
+    .follow i{
+      font-size: 30px;
+    }
+    .parallax p{
+        font-size: 70px;
+    }
+    
+    .parallax a{
+        width: 100%;
+        font-size: 50px;
+    }
+  }
+
+@media (max-width: 800px){
+    label #sidebar_btn{
+      display: block;
+    }
+    .left-section{
+      padding-left: 5%;
+    }
+    .left-section img{
+      height: 100px;
+    }
+    .left-section span{
+      font-size: 50px;
+    }
+    .right-section ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #ffffff;
+      margin: 0;
+      padding: 0;
+      top: 100px;
+      left: -100%;
+      text-align: center;
+      font-size: 16px;
+      z-index: 1;
+    }
+  
+    .right-section ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+  
+    .right-section ul li a{
+        font-size: 26px;
+    }
+    #check:checked +label ~ ul{
+      left: 0%;
+    }
+    #check:checked + label #sidebar_btn {
+      display: none;
+    }
+  
+    #check:checked + label #cancel {
+        display: block;
+    }
+  
+    #check:not(:checked) + label #sidebar_btn {
+        display: block;
+    }
+  
+    #check:not(:checked) + label #cancel {
+        display: none;
+    }
+    .footer{
+      display: grid;
+      flex-direction: column;
+      height: 100%;
+    }
+    .footer div ul li{
+      font-size: 32px;
+      text-align: center;
+    }
+    .location{
+      display: none;
+    }
+    .follow i{
+      font-size: 40px;
+    }
+    .footer{
+      display: grid;
+      flex-direction: column;
+      height: 100%;
+    }
+    .footer div ul li{
+      font-size: 32px;
+      text-align: center;
+    }
+    .location{
+      display: none;
+    }
+    .follow i{
+      font-size: 30px;
+    }
+    .info{
+        font-size: 24px;
+    }
+    .parallax p{
+        font-size: 64px;
+    }
+    
+    .parallax a{
+        font-size: 50px;
+    }
+    .highlights img{
+        height: 400px;
+    }
+  }
+
+@media (max-width: 710px){
+    label #sidebar_btn{
+      display: block;
+    }
+    .left-section{
+      padding-left: 5%;
+    }
+    .left-section img{
+      height: 100px;
+    }
+    .left-section span{
+      font-size: 50px;
+    }
+    .right-section ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #ffffff;
+      margin: 0;
+      padding: 0;
+      top: 100px;
+      left: -100%;
+      text-align: center;
+      font-size: 16px;
+      z-index: 1;
+    }
+  
+    .right-section ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+  
+    .right-section ul li a{
+        font-size: 26px;
+    }
+    #check:checked +label ~ ul{
+      left: 0%;
+    }
+    #check:checked + label #sidebar_btn {
+      display: none;
+    }
+  
+    #check:checked + label #cancel {
+        display: block;
+    }
+  
+    #check:not(:checked) + label #sidebar_btn {
+        display: block;
+    }
+  
+    #check:not(:checked) + label #cancel {
+        display: none;
+    }
+    .footer{
+      display: grid;
+      flex-direction: column;
+      height: 100%;
+    }
+    .footer div ul li{
+      font-size: 32px;
+      text-align: center;
+    }
+    .mail-contact ul li{
+        font-size: 12px;
+    }
+    .location{
+      display: none;
+    }
+    .follow i{
+      font-size: 40px;
+    }
+    .footer{
+      display: grid;
+      flex-direction: column;
+      height: 100%;
+    }
+    .footer div ul li{
+      font-size: 32px;
+      text-align: center;
+    }
+    .location{
+      display: none;
+    }
+    .follow i{
+      font-size: 30px;
+    }
+    .top-image{
+        font-size: 60px;
+    }
+    .info{
+        font-size: 16px;
+    }
+    .parallax p{
+        font-size: 54px;
+    }
+    
+    .parallax a{
+        width: 100%;
+        font-size: 40px;
+    }
+    .highlights img{
+        height: 300px;
+    }
+  }
+
+@media (max-width: 420px){
+    label #sidebar_btn{
+      display: block;
+    }
+    .left-section{
+      padding-left: 5%;
+    }
+    .left-section img{
+      height: 100px;
+    }
+    .left-section span{
+      font-size: 50px;
+    }
+    .right-section ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #ffffff;
+      margin: 0;
+      padding: 0;
+      top: 100px;
+      left: -100%;
+      text-align: center;
+      font-size: 16px;
+      z-index: 1;
+    }
+  
+    .right-section ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+  
+    .right-section ul li a{
+        font-size: 26px;
+    }
+    #check:checked +label ~ ul{
+      left: 0%;
+    }
+    #check:checked + label #sidebar_btn {
+      display: none;
+    }
+  
+    #check:checked + label #cancel {
+        display: block;
+    }
+  
+    #check:not(:checked) + label #sidebar_btn {
+        display: block;
+    }
+  
+    #check:not(:checked) + label #cancel {
+        display: none;
+    }
+    .footer{
+      display: grid;
+      flex-direction: column;
+      height: 100%;
+    }
+    .footer div ul li{
+      font-size: 22px;
+      text-align: center;
+    }
+    .location{
+      display: none;
+    }
+    .follow i{
+      font-size: 40px;
+    }
+    .footer{
+      display: grid;
+      flex-direction: column;
+      height: 100%;
+    }
+    .footer div ul li{
+      font-size: 22px;
+      text-align: center;
+    }
+    .mail-contact {
+        font-size: 18px;
+    }
+    .location{
+      display: none;
+    }
+    .follow i{
+      font-size: 30px;
+    }
+    .top-image{
+        font-size: 50px;
+    }
+    .info{
+        font-size: 16px;
+    }
+    .parallax p{
+        font-size: 44px;
+    }
+    
+    .parallax a{
+        font-size: 30px;
+    }
+    .highlights img{
+        height: 175px;
+    }
+    .sponsors ul img{
+        height: 80%;
+        margin-left: 5%;
+    }
+  }

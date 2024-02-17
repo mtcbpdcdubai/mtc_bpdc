@@ -1,0 +1,643 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+html{
+    scroll-behavior: smooth;
+  }
+body{
+    margin: 0%;
+    width: 100%;
+}
+.navbar{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1%;
+    z-index: 1;
+}
+.left-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    padding: 1% 0% ; 
+    padding-left: 3%;
+}
+.left-section img{
+    height: 110px;
+    margin-right: 2px;
+}
+.left-section span{
+    font-size: 50px;
+    font-family: Rubik;
+}
+
+.right-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.right-section ul{
+    font-family: Rubik;
+    font-size: 20px;
+    padding: 0px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.right-section ul li{
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+}
+
+.right-section ul li a{
+    text-decoration: none;
+    color: #000000;
+    padding: 5px 0;
+    font-size: 26px;
+}
+.right-section ul li a:hover{
+    color: #267fdd;
+    border-bottom:3px solid #267fdd;
+    padding-bottom: 5px;
+}
+
+label #sidebar_btn, label #cancel{
+    color: #000000;
+    font-size: 32px;
+    margin-right: 40px;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+    float: right;
+    right: 15%;
+}
+#check{
+    display: none;
+}
+
+
+
+.background{
+    width: 100%;
+}
+
+.background-image-container{
+    position: relative;
+    text-align: center;
+    
+}
+
+.background-image-container::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Adjust the last value (0.5) for the desired transparency */
+    
+}
+.background-image-container ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 70%;
+    top: 50%; /* Adjust as needed */
+    left: 50%; /* Adjust as needed */
+    transform: translate(-50%, -50%);
+    display: flex;
+    
+}
+
+.logo{
+    height: 600px; /* Adjust the max width of the logo */
+   
+}
+.fullname {
+    color: white; /* Adjust text color */
+    font-size: 150px; /* Adjust font size */
+    margin: 0; /* Remove default margin */
+    text-align: center;
+    font-family: Inter;
+    font-style: italic;
+    
+}
+
+/*
+.logo{
+    position: absolute
+    top:65px;
+    left:850px;
+    height: 350px;
+}
+*/
+.heading{
+    position: absolute;
+    width: 95%;
+    font-family: Inter;
+    font-style: italic;
+    padding: 30px;
+    /* left: 470px; */
+    text-align: center;
+    font-size: 60px ;
+
+}
+
+.about-para{
+    padding: 2% 10%;
+    text-align: center;
+    font-size: 30px;
+    font-family: Inter;
+    font-style: italic;
+}
+.about-para h1{
+    font-size: 70px;
+}
+
+.mlsa{
+    border-top: 1px solid #939394;
+    border-bottom:1px solid #939394;
+    
+}
+.mlsa ul{
+    list-style: none;
+    padding: 3%;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.mlsa li p{
+    font-size: 100px;
+    margin: 0% 5%;
+    padding-top: 15%;
+    text-align: center;
+    font-family: Inter;
+    font-style: italic;
+    
+}
+
+.mlsa img{
+    height: 600px;
+}
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 10%;
+}
+.ellipse1,.ellipse2,.ellipse3,.ellipse4,.ellipse5, .ellipse6{
+    position: relative;
+    font-family: Inter;
+    font-style: italic;
+    
+    width: 64%;
+    font-size: 28px;
+    margin-top: 150px;
+    
+    /* left: 250px; */
+    border-radius: 20px;
+    text-align: center; 
+    justify-content: space-around;
+}
+
+.ellipse1{
+    background: #FFA500;
+    
+}
+.ellipse2{
+    background: #F25123;
+}
+
+.ellipse3{
+    background: #00A4EE;
+}
+.ellipse4{
+    background: #FFB900;
+}
+
+.ellipse5{
+    background: #7EB900;
+}
+
+.ellipse6{
+    background: #939394;
+}
+
+
+
+.title{
+    
+    padding-bottom: 2px;
+    font-size: 44px;
+}
+
+
+/*.....................*/
+
+.ellipse1 ul, .ellipse2 ul, .ellipse3 ul, .ellipse4 ul, .ellipse5 ul, .ellipse6 ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.ellipse1 li, .ellipse2 li, .ellipse3 li, .ellipse4 li, .ellipse5 li, .ellipse6 li  {
+    margin: 0% 10px; /* Adjust the margin as needed */
+}
+
+.ellipse1, .ellipse3, .ellipse5{
+    
+    transform: translateX(200px);
+    transition: opacity 0.5s, transform 1s;
+}
+.ellipse1.fade-up-active, .ellipse3.fade-up-active, .ellipse5.fade-up-active{
+  opacity: 1;
+  transform: translateX(0px);
+}
+.ellipse2, .ellipse4, .ellipse6{
+  
+  transform: translateX(-200px);
+  transition: opacity 0.5s, transform 1s;
+}
+.ellipse2.fade-up-active, .ellipse4.fade-up-active, .ellipse6.fade-up-active{
+  opacity: 1;
+  transform: translateX(0px);
+
+}
+
+.person ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Center the content in each person div */
+    display: grid;
+}
+
+.person li {
+    margin-bottom: 10px; /* Adjust the margin as needed */
+
+}
+/*..............*/
+.person {
+    display: flex;
+    justify-content: center;
+}
+.person ul {
+    position: relative;
+    overflow: hidden;
+    padding-top: 15%;
+    
+    
+}
+.person ul li {
+    position: relative;
+}
+.person ul li img {
+    transition: transform 0.3s ease; /* Add transform property for image movement */
+    
+}
+
+.person ul:hover li img {
+    transform: translateY(-20px); /* Shift the image up on hover */
+    
+}
+.person ul #socials {
+    position: absolute;
+    top: 65%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the social icons */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    margin: 0px;
+    padding-top: 10%;
+    
+}
+.person ul #socials a{
+    color: #000000;
+}
+.person ul:hover #socials {
+    opacity: 1;
+}
+
+.person ul li{
+    font-size: 24px;
+}
+#c-name{
+    font-weight: bolder;
+    font-size: 32px;
+    
+}
+.face1,.face2,.face3,.face4{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* This creates a circle by using border-radius */
+    overflow: hidden; /* Ensures the image doesn't overflow the circle */
+    background-color: #ccc; 
+    margin-left: 20px;
+    
+}
+.agenda{
+    background-color: white;
+    width: 90%;
+    font-size: 25px;
+}
+
+
+.face1,
+.face2,
+.face3 {
+    margin-right: 20px; 
+}
+.circle-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+} 
+
+/* .name { 
+    width: 20%;
+    font-family: Inter;
+    font-style: italic;
+    margin-top: 10px; 
+    color: black;
+    font-size: 25px;
+    top: 600px;
+    left: 0px;
+    text-align: left;
+} */
+.names-container {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+}
+.name { 
+    width: 200px; /* Set the width to 100% to match the width of the parent container */
+    font-family: Inter;
+    font-style: italic;
+    margin-top: 10px; 
+    color: black;
+    font-size: 25px;
+    text-align: center; /* Center the text */
+    position: relative; /* Use relative positioning */
+    /* top: 25px; */
+    left: 30px; 
+    margin-right: 50px; 
+}
+#scroll{
+    transform: translateY(80px);
+    transition: opacity 0.5s, transform 1.5s;
+}
+#scroll.fade-up-active {
+    opacity: 1;
+    transform: translateY(0);
+}
+/*footer*/
+.footer{
+    position: relative; 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    bottom: 0; 
+  
+    z-index: 10;
+    
+}
+.footer div{
+    flex-grow: 1;
+    text-align: center;
+    color: #ffffff;
+    font-size: 24px;
+    font-family: Inter;
+}
+
+.footer div ul li{
+    list-style: none;
+}
+
+.mail-contact a{
+    color: #ffffff; 
+}
+
+.location ul{
+    padding: 0%;
+    margin-top: 5px;
+    margin-right: 5%;
+   
+}
+
+.location img{
+    width: 35%;
+}
+
+.location li{
+    font-size: 16px;
+}
+
+.follow li{
+    font-size: 26px;
+}
+
+.follow i{
+    color: #ffffff;
+}
+
+@media only screen and (max-width: 600px) {
+    .ellipse1 ul,
+    .ellipse2 ul,
+    .ellipse3 ul,
+    .ellipse4 ul,
+    .ellipse5 ul,
+    .ellipse6 ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .person {
+        width: 100%; /* Adjust the width as needed */
+    }
+
+    .person ul {
+        display: block;
+        text-align: center;
+    }
+
+    .person ul li {
+        margin-right: 0;
+    }
+
+    .face1,
+    .face2,
+    .face3,
+    .face4 {
+        margin-right: 0;
+        margin-bottom: 10px; /* Add some spacing between person divs */
+    }
+
+    .name {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 1406px){
+    .navbar{
+        width: 100%;
+    }
+    .left-section img{
+        left: 1%;
+    }
+    .left-section span{
+        font-size: 35px;
+    }
+    .left-section img{
+        height: 70px;
+    }
+    
+    .right-section ul li{
+      padding: 0px 12px;
+      
+    }
+    .ellipse1 ul, .ellipse2 ul, .ellipse3 ul, .ellipse4 ul, .ellipse5 ul, .ellipse6 ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .person img{
+        transform: translateY(-20px);
+    }
+    .person ul #socials{
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1240px){
+    label #sidebar_btn{
+      display: block;
+    }
+    .left-section{
+      padding-left: 5%;
+    }
+    .left-section img{
+      height: 100px;
+    }
+    .left-section span{
+      font-size: 50px;
+    }
+    .right-section ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #ffffff;
+      margin: 0;
+      padding: 0;
+      top: 100px;
+      left: -100%;
+      text-align: center;
+      font-size: 16px;
+      z-index: 1;
+    }
+  
+    .right-section ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+  
+    .right-section ul li a{
+        font-size: 26px;
+    }
+    #check:checked +label ~ ul{
+      left: 0%;
+    }
+    #check:checked + label #sidebar_btn {
+      display: none;
+    }
+  
+    #check:checked + label #cancel {
+        display: block;
+    }
+  
+    #check:not(:checked) + label #sidebar_btn {
+        display: block;
+    }
+  
+    #check:not(:checked) + label #cancel {
+        display: none;
+    }
+    .footer{
+      display: grid;
+      flex-direction: column;
+      height: 100%;
+    }
+    .footer div ul li{
+      font-size: 32px;
+      text-align: center;
+    }
+    .location{
+      display: none;
+    }
+    .follow i{
+      font-size: 40px;
+    }
+    .footer{
+      display: grid;
+      flex-direction: column;
+      height: 100%;
+    }
+    .footer div ul li{
+      font-size: 32px;
+      text-align: center;
+    }
+    .location{
+      display: none;
+    }
+    .follow i{
+      font-size: 30px;
+    }
+    .background-image-container h1{
+        font-size: 80px;
+    }
+    .background-image-container ul img{
+        height: 300px;
+    }
+    .about-para{
+        font-size: 20px;
+    }
+    .about-para h1{
+        font-size: 50px;
+    }
+    .mlsa ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .mlsa{
+        margin: 0% 0% 5%;
+    }
+    .ellipse1 ul, .ellipse2 ul, .ellipse3 ul, .ellipse4 ul, .ellipse5 ul, .ellipse6 ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .person img{
+        transform: translateY(-20px);
+    }
+    .person ul #socials{
+        opacity: 1;
+    }
+    
+  }
