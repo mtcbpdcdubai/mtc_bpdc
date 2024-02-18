@@ -11,7 +11,6 @@ body{
   display: flex;
   flex-direction: row;                                                                  
   justify-content: space-between;
-  padding: 1% 0%;
   background-color: #000000;
   color: #ffffff;
 }
@@ -24,11 +23,11 @@ body{
   padding-left: 3%;
 }
 .left-section img{
-  height: 110px;
+  height: 10vh;
   margin-right: 2px;
 }
 .left-section span{
-  font-size: 50px;
+  font-size: 3rem;
   font-family: Rubik;
 }
 
@@ -40,16 +39,16 @@ body{
 }
 .right-section ul{
   font-family: Rubik;
-  font-size: 20px;
-  padding: 0px;
+  font-size: 1rem;
+  padding-right: 10px;
   font-weight: bold;
   text-decoration: none;
 }
 
 .right-section ul li{
   display: inline-block;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   text-decoration: none;
 }
 
@@ -57,12 +56,13 @@ body{
   text-decoration: none;
   color: #ffffff;
   padding: 5px 0;
-  font-size: 26px;
+  font-size: 1.4rem;
 }
 
 .right-section ul li a:hover{
-border-bottom: 3px solid #ffffff;
-padding-bottom: 5px;
+  color: #ffffff;
+  border-bottom:3px solid #ffffff;
+  padding-bottom: 5px;
 }
 
 label #sidebar_btn, label #cancel{
@@ -81,200 +81,7 @@ label #sidebar_btn, label #cancel{
 
 
 
-@media (max-width: 1406px){
-    .navbar{
-        width: 100%;
-    }
-    .left-section img{
-        left: 1%;
-    }
-    .left-section span{
-        font-size: 35px;
-    }
-    .left-section img{
-        height: 70px;
-    }
-    
-    .right-section ul li{
-      padding: 0px 12px;
-      
-    }
-  
-}
 
-@media (max-width: 1240px){
-  label #sidebar_btn{
-    display: block;
-  }
-  .left-section{
-    padding-left: 5%;
-  }
-  .left-section img{
-    height: 100px;
-  }
-  .left-section span{
-    font-size: 50px;
-  }
-  .right-section ul{
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: #000000;
-    margin: 0;
-    padding: 0;
-    top: 100px;
-    left: -100%;
-    text-align: center;
-    font-size: 16px;
-  }
-
-  .right-section ul li{
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-  }
-
-  .right-section ul li a{
-      font-size: 26px;
-  }
-  #check:checked +label ~ ul{
-    left: 0%;
-  }
-  #check:checked + label #sidebar_btn {
-    display: none;
-  }
-
-  #check:checked + label #cancel {
-      display: block;
-  }
-
-  #check:not(:checked) + label #sidebar_btn {
-      display: block;
-  }
-
-  #check:not(:checked) + label #cancel {
-      display: none;
-  }
-  .footer{
-    display: grid;
-    flex-direction: column;
-    height: 100%;
-  }
-  .footer div ul li{
-    font-size: 32px;
-    text-align: center;
-  }
-  .location{
-    display: none;
-  }
-  .follow i{
-    font-size: 40px;
-  }
-  .footer{
-    display: grid;
-    flex-direction: column;
-    height: 100%;
-  }
-  .footer div ul li{
-    font-size: 32px;
-    text-align: center;
-  }
-  .location{
-    display: none;
-  }
-  .follow i{
-    font-size: 30px;
-  }
-  .bitsmap{
-    width: 60%;
-    height: 50vh;
-    border: 0px;
-  }
-
-}
-
-@media (max-width: 500px){
-  label #sidebar_btn{
-    display: block;
-  }
-  .left-section{
-    padding-left: 5%;
-  }
-  .left-section img{
-    height: 100px;
-  }
-  .left-section span{
-    font-size: 50px;
-  }
-  .right-section ul{
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: #000000;
-    margin: 0;
-    padding: 0;
-    top: 100px;
-    left: -100%;
-    text-align: center;
-    
-  }
-
-  .right-section ul li{
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-  }
-
-  .right-section ul li a{
-      font-size: 26px;
-  }
-  #check:checked +label ~ ul{
-    left: 0%;
-  }
-  #check:checked + label #sidebar_btn {
-    display: none;
-  }
-
-  #check:checked + label #cancel {
-      display: block;
-  }
-
-  #check:not(:checked) + label #sidebar_btn {
-      display: block;
-  }
-
-  #check:not(:checked) + label #cancel {
-      display: none;
-  }
-  .footer{
-    display: grid;
-    flex-direction: column;
-    height: 100%;
-  }
-  .footer div ul li{
-    font-size: 32px;
-    text-align: center;
-  }
-  .location{
-    display: none;
-  }
-  .follow i{
-    font-size: 30px;
-  }
-  .inputs p{
-    font-size: 20px;
-  }
-  
-  .bitsmap{
-    width: 70%;
-    height: 30vh;
-    border: 0px;
-  }
-  .submit-button{
-    font-size: 14px;
-  }
-
-}
   
 
 .inputs{
@@ -387,7 +194,6 @@ label #sidebar_btn, label #cancel{
 }
 
 
-
 .footer{
   position: relative; 
   width: 100%;
@@ -404,7 +210,7 @@ label #sidebar_btn, label #cancel{
   flex-grow: 1;
   text-align: center;
   color: #ffffff;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-family: Inter;
 }
 .footer div ul li{
@@ -422,14 +228,19 @@ margin: 0%;
 }
 .mail-contact a{
   color: #ffffff; 
+  font-size: 1rem;
 }
+
 .location{
-width: 40%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
 }
 .location ul{
 padding: 0%;
-display: flex;
-flex-direction: column;
+margin: 0%;
+
 }
 
 .location img{
@@ -437,7 +248,7 @@ flex-direction: column;
 }
 
 .location li{
-  font-size: 16px;
+  font-size: 1rem;
 }
 .follow{
   display: flex;
@@ -451,5 +262,200 @@ padding: 0%;
 
 .follow i{
   color: #ffffff;
-  font-size: 2rem;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 1406px){
+  .navbar{
+      width: 100%;
+  }
+  .left-section img{
+      left: 1%;
+  }
+  .left-section span{
+      font-size: 35px;
+  }
+  .left-section img{
+      height: 70px;
+  }
+  
+  .right-section ul li{
+    padding: 0px 12px;
+    
+  }
+
+}
+
+@media (max-width: 1240px){
+label #sidebar_btn{
+  display: block;
+}
+.left-section{
+  padding-left: 5%;
+}
+.left-section img{
+  height: 100px;
+}
+.left-section span{
+  font-size: 50px;
+}
+.right-section ul{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #000000;
+  margin: 0;
+  padding: 0;
+  top: 100px;
+  left: -100%;
+  text-align: center;
+  font-size: 16px;
+}
+
+.right-section ul li{
+  display: block;
+  margin: 50px 0;
+  line-height: 30px;
+}
+
+.right-section ul li a{
+    font-size: 26px;
+}
+#check:checked +label ~ ul{
+  left: 0%;
+}
+#check:checked + label #sidebar_btn {
+  display: none;
+}
+
+#check:checked + label #cancel {
+    display: block;
+}
+
+#check:not(:checked) + label #sidebar_btn {
+    display: block;
+}
+
+#check:not(:checked) + label #cancel {
+    display: none;
+}
+.footer{
+  display: grid;
+  flex-direction: column;
+  height: 100%;
+}
+.footer div ul li{
+  font-size: 32px;
+  text-align: center;
+}
+.location{
+  display: none;
+}
+.follow i{
+  font-size: 40px;
+}
+.footer{
+  display: grid;
+  flex-direction: column;
+  height: 100%;
+}
+.footer div ul li{
+  font-size: 32px;
+  text-align: center;
+}
+.location{
+  display: none;
+}
+.follow i{
+  font-size: 30px;
+}
+.bitsmap{
+  width: 60%;
+  height: 50vh;
+  border: 0px;
+}
+
+}
+
+@media (max-width: 500px){
+label #sidebar_btn{
+  display: block;
+}
+.left-section{
+  padding-left: 5%;
+}
+.left-section img{
+  height: 100px;
+}
+.left-section span{
+  font-size: 50px;
+}
+.right-section ul{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #000000;
+  margin: 0;
+  padding: 0;
+  top: 100px;
+  left: -100%;
+  text-align: center;
+  
+}
+
+.right-section ul li{
+  display: block;
+  margin: 50px 0;
+  line-height: 30px;
+}
+
+.right-section ul li a{
+    font-size: 26px;
+}
+#check:checked +label ~ ul{
+  left: 0%;
+}
+#check:checked + label #sidebar_btn {
+  display: none;
+}
+
+#check:checked + label #cancel {
+    display: block;
+}
+
+#check:not(:checked) + label #sidebar_btn {
+    display: block;
+}
+
+#check:not(:checked) + label #cancel {
+    display: none;
+}
+.footer{
+  display: grid;
+  flex-direction: column;
+  height: 100%;
+}
+.footer div ul li{
+  font-size: 32px;
+  text-align: center;
+}
+.location{
+  display: none;
+}
+.follow i{
+  font-size: 30px;
+}
+.inputs p{
+  font-size: 20px;
+}
+
+.bitsmap{
+  width: 70%;
+  height: 30vh;
+  border: 0px;
+}
+.submit-button{
+  font-size: 14px;
+}
+
 }
