@@ -23,7 +23,6 @@
     .footer{
       display: grid;
       flex-direction: column;
-      height: 100%;
     }
     .footer div ul li{
       font-size: 32px;
