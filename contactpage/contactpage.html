@@ -53,28 +53,28 @@
           <div class = "firstlastnames">
             <div class="first-name-box">
               <p class="first-name">First name*</p>
-              <input class="inp-box" type="text" placeholder="" name="firstname" required>
+              <input class="inp-box" id="inp-box" type="text" placeholder="" name="firstname" required>
             </div>
           
             <div class="last-name-box">
               <p class="last-name">Last name*</p>
-              <input class="inp-box" type="text" placeholder="" name="lastname" required>
+              <input class="inp-box" id="inp-box" type="text" placeholder="" name="lastname" required>
             </div>
           </div>
           
           <div class="outer1">
             <div class="contact-no-box">
               <p class="contact-no">Contact number</p>
-              <input class="inp-box" type="text" placeholder="" name="contact">
+              <input class="inp-box" id="inp-box" type="text" placeholder="" name="contact">
             </div>
       
             <div class="email-box">
               <p class="email">Email ID</p>
-              <input class="inp-box" type="text" placeholder="" name="email">
+              <input class="inp-box" id="inp-box" type="text" placeholder="" name="email">
             </div>
           </div>
           
-          <input class="main-message" type="text" placeholder="Leave us a message..."> 
+          <input class="main-message" id="inp-box" type="text" placeholder="Leave us a message..."> 
           <button class="submit-button">Submit</button>
         </div>
       </div> 
@@ -116,7 +116,26 @@
       </div>
     </div>
   
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+      var boxes = document.querySelectorAll('#inp-box');
 
+      // Add click event listener to each box
+      boxes.forEach(function(box) {
+        box.addEventListener('click', function() {
+          // Remove 'clicked' class from all boxes
+          boxes.forEach(function(b) {
+            if (b !== box) {
+              b.classList.remove('clicked');
+            }
+          });
+
+          // Toggle the 'clicked' class on the clicked box
+          this.classList.toggle('clicked');
+        });
+      });
+    });
+    </script>
   </body>
 </html>
 

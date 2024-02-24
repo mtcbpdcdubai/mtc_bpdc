@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="mtc-homepage/styles/style.css">
-
+        <link rel="stylesheet" href="mtc-homepage/styles/responsive.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Ranga&family=Reem+Kufi:wght@500&display=swap" rel="stylesheet">
@@ -43,22 +44,24 @@
                 </ul>
             </div>
         </div>
-        <div class="middle-section">
-              
-                    <img class="background" src="mtc-homepage/pictures/background2.jpg">
-                    <ul>
-                        <li><p id="fullname">
-                            Get ready to explore new opportunities with us
-                        </p></li>
-                        <li id="mtc-logo"><img src="mtc-homepage/pictures/MTC logo.png"></li>
-                    </ul>         
+        
+        <div class="middle-section">         
+            <ul>
+                <li><p>Get ready to explore new opportunities with </p>
+                    <h2>Microsoft Tech Club</h2>
+                    <a href="#registration-class">Join Us</a></li>
+                <li><img id="mtc-logo" src="mtc-homepage/pictures/MTC logo.png"></li>
+            </ul> 
+                        
         </div>
+     
+        
         <div class="about-container">
             <h2 id="scroll">What do we offer?</h2>
             <div class="text" id="scroll">At the Microsoft Tech Club, we believe in the power of collaboration and teamwork. Our diverse teams work together to provide members with a range of workshops, competitions, and events that will help them develop their skills and advance their careers. Whether you are interested in web development, programming languages, or data analysis, we have something for everyone.</div>
             <ul>
-                <li id="work"><img class="web"  src="mtc-homepage/pictures/VSCode_1.jpeg"><p>Workshops</p></li>
-                <li id="speaker"><img class="powerbi"  src="mtc-homepage/pictures/IMG_6253.JPG"><p>Speaker Session</p></li>
+                <li id="work"><img class="web"  src="mtc-homepage/pictures/workshop.jpg"><p>Workshops</p></li>
+                <li id="speaker"><img class="powerbi"  src="mtc-homepage/pictures/IMG_6253.JPG"><p>Speaker Sessions</p></li>
                 <li id="blogs"><img class="web" src="mtc-homepage/pictures/Picture1.jpg"><p>Technical Blogs</p></li>
                 <li id="competition"><img class="powerbi" src="mtc-homepage/pictures/IMG20230920121853.jpg"><p>Competitions</p></li>
                
@@ -119,7 +122,7 @@
                 
             </div>
             
-            <ul class="event-btn">
+            <ul class="event-btn" id="registration-class">
                 <li><a href="#">Event Registration</a></li>
                 <li><a href="https://forms.gle/D97AiJPLgPPfqao3A">Become a Member</a></li>
             </ul>
@@ -170,7 +173,7 @@
                 document.querySelector('.recent-events-carousel').style.transform = `translateX(${offset}px)`;
             }
         
-            setInterval(showNext, 3000); // Change slide every 3 seconds
+            setInterval(showNext, 1700); // Change slide every 3 seconds
         </script>    
         <script src="mtc-homepage/styles/script1.js"></script>
         <script src="About Us/script.js"></script>

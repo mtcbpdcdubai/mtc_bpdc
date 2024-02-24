@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+*{
+  font-family: Rubik;
+}
 html{
     scroll-behavior: smooth;
   }
@@ -28,7 +31,6 @@ body{
   }
   .left-section span{
     font-size: 3rem;
-    font-family: Rubik;
   }
   
   .right-section{
@@ -38,7 +40,6 @@ body{
   
   }
   .right-section ul{
-    font-family: Rubik;
     font-size: 1rem;
     padding-right: 10px;
     font-weight: bold;
@@ -107,7 +108,7 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 40vh;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -131,9 +132,16 @@ body{
     text-align: center;
     font-family: Inter;
     font-style: italic;
-    
+    animation: enlarge 3s alternate;
 }
-
+@keyframes enlarge {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.2); /* Adjust the scale factor for desired enlargement */
+    }
+  }
 /*
 .logo{
     position: absolute
@@ -145,9 +153,8 @@ body{
 .heading{
     position: absolute;
     width: 95%;
-    font-family: Inter;
     font-style: italic;
-    padding: 30px;
+    padding: 30px 0px;
     /* left: 470px; */
     text-align: center;
     font-size: 60px ;
@@ -158,7 +165,6 @@ body{
     padding: 2% 10%;
     text-align: center;
     font-size: 30px;
-    font-family: Inter;
     font-style: italic;
 }
 .about-para h1{
@@ -172,24 +178,32 @@ body{
 }
 .mlsa ul{
     list-style: none;
-    padding: 3%;
+    padding: 2%;
     margin: 0;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
 }
-
+.mlsa ul li{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1% 2%;
+}
+.mlsa li a{
+    margin: 0% 1%;
+}
 .mlsa li p{
-    font-size: 100px;
+    font-size: 4rem;
     margin: 0% 5%;
-    padding-top: 15%;
     text-align: center;
-    font-family: Inter;
     font-style: italic;
     
 }
 
 .mlsa img{
-    height: 600px;
+    height: 60vh;
+    
 }
 .boxes{
     display: flex;
@@ -197,10 +211,8 @@ body{
     justify-content: center;
     padding-bottom: 10%;
 }
-.ellipse1,.ellipse2,.ellipse3,.ellipse4,.ellipse5, .ellipse6{
+.ellipse1,.ellipse2,.ellipse3,.ellipse4,.ellipse5, .ellipse6, .ellipse7{
     position: relative;
-    font-family: Inter;
-    font-style: italic;
     width: 80%;
     font-size: 2rem;
     margin-top: 150px;
@@ -229,23 +241,24 @@ body{
 .ellipse5{
     background: #7EB900;
 }
-
 .ellipse6{
+    background: #267fdd;
+}
+.ellipse7{
     background: #939394;
 }
 
 
 
 .title{
-    
-    padding-bottom: 2px;
-    font-size: 44px;
+    font-size: 3.5rem;
+    margin: 3% 0% 0%;
 }
 
 
 /*.....................*/
 
-.ellipse1 ul, .ellipse2 ul, .ellipse3 ul, .ellipse4 ul, .ellipse5 ul, .ellipse6 ul{
+.ellipse1 ul, .ellipse2 ul, .ellipse3 ul, .ellipse4 ul, .ellipse5 ul, .ellipse6 ul, .ellipse7 ul{
     list-style: none;
     padding: 0;
     margin: 0;
@@ -253,16 +266,16 @@ body{
     justify-content: space-around;
 }
 
-.ellipse1 li, .ellipse2 li, .ellipse3 li, .ellipse4 li, .ellipse5 li, .ellipse6 li  {
-    margin: 0% 10px; /* Adjust the margin as needed */
+.ellipse1 li, .ellipse2 li, .ellipse3 li, .ellipse4 li, .ellipse5 li, .ellipse6 li, .ellipse7 li  {
+    margin: 2% 10px; /* Adjust the margin as needed */
 }
 
-.ellipse1, .ellipse3, .ellipse5{
+.ellipse1, .ellipse3, .ellipse5, .ellipse7{
     
     transform: translateX(200px);
     transition: opacity 0.5s, transform 1s;
 }
-.ellipse1.fade-up-active, .ellipse3.fade-up-active, .ellipse5.fade-up-active{
+.ellipse1.fade-up-active, .ellipse3.fade-up-active, .ellipse5.fade-up-active, .ellipse7.fade-up-active{
   opacity: 1;
   transform: translateX(0px);
 }
@@ -285,10 +298,6 @@ body{
     display: grid;
 }
 
-.person li {
-    margin-bottom: 10px; /* Adjust the margin as needed */
-
-}
 /*..............*/
 .person {
     display: flex;
@@ -297,12 +306,18 @@ body{
 .person ul {
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
     padding-top: 15%;
-    
-    
 }
 .person ul li {
     position: relative;
+    margin: 0% 2%; /* Adjust the margin as needed */
+    font-size: 1.5rem;
+    width: 100%;
+    
 }
 .person ul li img {
     transition: transform 0.3s ease; /* Add transform property for image movement */
@@ -313,39 +328,38 @@ body{
     transform: translateY(-20px); /* Shift the image up on hover */
     
 }
-.person ul #socials {
-    position: absolute;
-    top: 65%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Center the social icons */
+#socials {
+    position: relative;
+    display: flex;
+    transform: translate(0%, -50%);
+    justify-content: center;
     opacity: 0;
     transition: opacity 0.3s ease;
     margin: 0px;
-    padding-top: 10%;
+    padding: 0%;
     
 }
-.person ul #socials a{
+#socials a{
     color: #000000;
+    padding: 0% 1%;
 }
 .person ul:hover #socials {
     opacity: 1;
 }
 
-.person ul li{
-    font-size: 24px;
-}
 #c-name{
     font-weight: bolder;
-    font-size: 32px;
+    font-size: 2rem;
     
 }
-.face1,.face2,.face3,.face4{
+.face{
     width: 200px;
     height: 200px;
     border-radius: 50%; /* This creates a circle by using border-radius */
     overflow: hidden; /* Ensures the image doesn't overflow the circle */
     background-color: #ccc; 
-    margin-left: 20px;
+    margin: 0px 0px;
+    transform: translate(0%, 10%);
     
 }
 .agenda{
@@ -354,12 +368,6 @@ body{
     font-size: 25px;
 }
 
-
-.face1,
-.face2,
-.face3 {
-    margin-right: 20px; 
-}
 .circle-image {
     width: 100%;
     height: 100%;
@@ -384,7 +392,6 @@ body{
 }
 .name { 
     width: 200px; /* Set the width to 100% to match the width of the parent container */
-    font-family: Inter;
     font-style: italic;
     margin-top: 10px; 
     color: black;
@@ -396,7 +403,7 @@ body{
     margin-right: 50px; 
 }
 #scroll{
-    transform: translateY(80px);
+    transform: translateY(-80px);
     transition: opacity 0.5s, transform 1.5s;
 }
 #scroll.fade-up-active {
@@ -421,7 +428,6 @@ body{
     text-align: center;
     color: #ffffff;
     font-size: 1.5rem;
-    font-family: Inter;
 }
 .footer div ul li{
     list-style: none;
@@ -475,46 +481,8 @@ body{
     font-size: 1.5rem;
 }
 
-@media only screen and (max-width: 600px) {
-    .ellipse1 ul,
-    .ellipse2 ul,
-    .ellipse3 ul,
-    .ellipse4 ul,
-    .ellipse5 ul,
-    .ellipse6 ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .person {
-        width: 100%; /* Adjust the width as needed */
-    }
-
-    .person ul {
-        display: block;
-        text-align: center;
-    }
-
-    .person ul li {
-        margin-right: 0;
-    }
-
-    .face1,
-    .face2,
-    .face3,
-    .face4 {
-        margin-right: 0;
-        margin-bottom: 10px; /* Add some spacing between person divs */
-    }
-
-    .name {
-        width: 100%;
-        margin-right: 0;
-    }
-}
-
 @media (max-width: 1406px){
-    .navbar{
+      .navbar{
         width: 100%;
     }
     .left-section img{
@@ -526,26 +494,87 @@ body{
     .left-section img{
         height: 70px;
     }
-    
+
     .right-section ul li{
       padding: 0px 12px;
       
     }
-    .ellipse1 ul, .ellipse2 ul, .ellipse3 ul, .ellipse4 ul, .ellipse5 ul, .ellipse6 ul{
+    
+    .face{
+      width: 185px;
+      height: 185px;
+    }
+    #c-name{
+      font-size: 1.5rem;
+    }
+    .person ul li{
+      font-size: 1.1rem;
+  }
+
+  }
+  
+  @media (max-width: 1240px){
+    .footer{
+      display: grid;
+      flex-direction: column;
+      height: 100%;
+    }
+    .footer div ul li{
+      font-size: 32px;
+      text-align: center;
+    }
+    .location{
+      display: none;
+    }
+    .follow i{
+      font-size: 40px;
+    }
+    .right-section ul li a{
+      font-size: 1rem;
+    }
+    .background-image-container ul{
+        height: 30vh;
+    }
+    
+    .ellipse2 ul, .ellipse3 ul, .ellipse5 ul{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center; /* Center items horizontally */
+        text-align: center; 
+    }
+    .person ul{
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
+        align-items: center;
     }
-    .person img{
-        transform: translateY(-20px);
+    
+    .mlsa img{
+      height: 40vh;
     }
-    .person ul #socials{
-        opacity: 1;
+    .mlsa ul {
+      display: flex;
     }
-}
-
-@media (max-width: 1240px){
+    .title{
+      font-size: 2.5rem;
+    }
+    .image-column img {
+      height: 45vh;
+      width: auto;
+    }
+    .about-para {
+      padding: 2% 5%;
+      font-size: 1.5rem;
+    }
+    .fullname{
+      font-size: 70px;
+    }
+    .logo{
+      height: 50px;
+    }
+  }
+  
+  @media (max-width: 915px){
     label #sidebar_btn{
       display: block;
     }
@@ -575,7 +604,7 @@ body{
     .right-section ul li{
       display: block;
       margin: 50px 0;
-      line-height: 30px;
+      line-height: 3vh;
     }
   
     .right-section ul li a{
@@ -599,58 +628,39 @@ body{
     #check:not(:checked) + label #cancel {
         display: none;
     }
-    .footer{
-      display: grid;
-      flex-direction: column;
-      height: 100%;
-    }
-    .footer div ul li{
-      font-size: 32px;
-      text-align: center;
-    }
-    .location{
-      display: none;
-    }
-    .follow i{
-      font-size: 40px;
-    }
-    .footer{
-      display: grid;
-      flex-direction: column;
-      height: 100%;
-    }
-    .footer div ul li{
-      font-size: 32px;
-      text-align: center;
-    }
-    .location{
-      display: none;
-    }
-    .follow i{
-      font-size: 30px;
-    }
-    .background-image-container h1{
-        font-size: 80px;
-    }
-    .background-image-container ul img{
-        height: 300px;
-    }
-    .about-para{
-        font-size: 20px;
-    }
-    .about-para h1{
-        font-size: 50px;
-    }
-    .mlsa ul{
-        display: flex;
+    
+    .ellipse1 ul,
+    .ellipse2 ul,
+    .ellipse3 ul,
+    .ellipse4 ul,
+    .ellipse5 ul,
+    .ellipse6 ul,
+    .ellipse7 ul {
         flex-direction: column;
         align-items: center;
-        justify-content: center;
     }
-    .mlsa{
-        margin: 0% 0% 5%;
+
+    .person {
+        width: 100%; 
     }
-    .ellipse1 ul, .ellipse2 ul, .ellipse3 ul, .ellipse4 ul, .ellipse5 ul, .ellipse6 ul{
+
+    .person ul {
+        display: block;
+        text-align: center;
+    }
+
+    .person ul li {
+        margin-right: 0;
+    }
+    .person ul li img{
+        margin: 0%;
+    }
+
+    .face {
+        margin-right: 0;
+        margin-bottom: 10px; 
+    }
+    .ellipse1 ul, .ellipse2 ul, .ellipse3 ul, .ellipse4 ul, .ellipse5 ul, .ellipse6 ul, .ellipse7 ul{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -658,9 +668,149 @@ body{
     }
     .person img{
         transform: translateY(-20px);
+        margin: 0%;
     }
     .person ul #socials{
         opacity: 1;
     }
+    .name {
+        width: 100%;
+        margin-right: 0;
+    }
+    .mlsa li p {
+        font-size: 4rem;
+
+    }
+    .mlsa ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2% 0%;
+    }
+    .mlsa ul li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .mlsa ul li img{
+        height: 30vh;
+    }
+    .mlsa{
+        margin: 0% 0% 5%;
+    }
     
   }
+  
+  @media screen and(max-width: 600px){
+    
+    
+    .follow i{
+      font-size: 1.4rem;
+    }
+    .fullname{
+      font-size: 30px;
+    }
+ 
+   
+    .middle-section ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .logo{
+      height: 15px;
+    }
+    .middle-section ul {
+      height: 90%;
+    }
+    .middle-section ul {
+      height: 90%;
+    }
+    .middle-section ul li img {
+      height: 40vh;
+      float: left;
+    }
+    .about-container ul li p {
+      font-size: 1.2rem;
+    }
+    .heading{
+      font-size: 3rem;
+    }
+    .recent-event {
+      width: 80%;
+      margin: 0 10px;
+    }
+    .carousel-title {
+      font-size: 2rem;
+    }
+    .about-para{
+        padding: 2% 3%;
+    }
+    .about-para p{
+        font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 420px){
+    label #sidebar_btn, label #cancel {
+      margin-right: 0px;
+      padding-right: 30px;
+      
+    }
+    .left-section img {
+      height: 80px;
+    }
+    .left-section span {
+      font-size: 2rem;
+    }
+    .footer div ul li{
+      font-size: 1.7rem;
+    }
+    .mail-contact{
+      padding: 2% 0%;
+    }
+    .follow i{
+      font-size: 1.3rem;
+    }
+    .fullname{
+        font-size: 3.5rem;
+    }
+    .heading{
+        font-size: 2.5rem;
+    }
+    .about-para {
+        padding: 2% 3%;
+        text-align: center;
+        font-size: 0.8rem;
+        font-style: italic;
+    }
+    .ellipse1 p,
+    .ellipse2 p,
+    .ellipse3 p,
+    .ellipse4 p,
+    .ellipse5 p,
+    .ellipse6 p,
+    .ellipse7 p{
+        font-size: 1.5rem;
+    }
+    .person ul #socials {
+        padding-top: 5%;
+    }
+    #c-name{
+        font-size: 1.7rem;
+    }
+    .mlsa li p {
+        font-size: 2rem;
+    }
+    .face{
+      width: 180px;
+      height: 180px;
+    }
+    .title{
+      padding: 0% 5%;
+    }
+    
+}
