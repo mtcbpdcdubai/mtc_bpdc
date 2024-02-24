@@ -6,8 +6,13 @@ document.addEventListener('DOMContentLoaded', function () {
             var element = fadeUpElements[i];
             var positionFromTop = element.getBoundingClientRect().top;
 
-            if (positionFromTop - window.innerHeight <= 0) {
+            if (window.innerWidth > 915 && positionFromTop - window.innerHeight <= 0) {
                 element.classList.add('fade-up-active');
+            }
+            else {
+                element.classList.remove('fade-up-active'); // Remove the class to stop the animation
+                element.style.transform = 'translateY(0)'; // Set the final translateY value
+                element.style.transform = 'translateX(0)'; // Set the final translateY value
             }
         }
     });
@@ -21,8 +26,13 @@ document.addEventListener('DOMContentLoaded', function () {
             var element = fadeUpElements[i];
             var positionFromTop = element.getBoundingClientRect().top;
 
-            if (positionFromTop - window.innerHeight <= 0) {
+            if (window.innerWidth > 915 && positionFromTop - window.innerHeight <= 0) {
                 element.classList.add('fade-up-active');
+            }
+            else {
+                element.classList.remove('fade-up-active'); // Remove the class to stop the animation
+                element.style.transform = 'translateY(0)'; // Set the final translateY value
+                element.style.transform = 'translateX(0)'; // Set the final translateY value
             }
           }
       });

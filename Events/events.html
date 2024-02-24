@@ -237,7 +237,7 @@
               var element = fadeUpElements[i];
               var positionFromTop = element.getBoundingClientRect().top;
 
-              if (positionFromTop - window.innerHeight <= 0) {
+              if (window.innerWidth > 915 && positionFromTop - window.innerHeight <= 0) {
                   element.classList.add('fade-up-active');
               }
             }
