@@ -82,7 +82,7 @@ label #sidebar_btn, label #cancel{
 }
 
 .middle-section{
-    background-image: url("/mtc-homepage/pictures/background2.jpg");
+    background-image: url("../mtc-homepage/pictures/background2.jpg");
     min-height: 85vh; 
     background-attachment: fixed;
     background-position: center;
