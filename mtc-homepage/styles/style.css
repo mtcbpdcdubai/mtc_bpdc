@@ -179,7 +179,7 @@ label #sidebar_btn, label #cancel{
     border-radius: 50%;
 }
 .about-container ul li p{
-    display: none;
+    display: block;
     margin: 1% 0%;
 }
 .about-container li img:hover + p{

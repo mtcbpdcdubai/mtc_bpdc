@@ -213,7 +213,7 @@ body{
 }
 .ellipse1,.ellipse2,.ellipse3,.ellipse4,.ellipse5, .ellipse6, .ellipse7{
     position: relative;
-    width: 80%;
+    width: 70%;
     font-size: 2rem;
     margin-top: 150px;
     
@@ -349,7 +349,7 @@ body{
 
 #c-name{
     font-weight: bolder;
-    font-size: 2rem;
+    font-size: 1.7rem;
     
 }
 .face{
