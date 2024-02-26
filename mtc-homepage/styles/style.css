@@ -132,6 +132,9 @@ label #sidebar_btn, label #cancel{
   text-decoration: none;
   color: #ffffff;
 }
+.middle-section ul li a:hover{
+  background-color: transparent;
+}
 
 .about-container{
     height: 750px;
