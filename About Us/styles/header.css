@@ -754,7 +754,7 @@ body{
     }
   }
   
-  @media (max-width: 420px){
+  @media (max-width: 450px){
     label #sidebar_btn, label #cancel {
       margin-right: 0px;
       padding-right: 30px;
@@ -806,8 +806,8 @@ body{
         font-size: 2rem;
     }
     .face{
-      width: 180px;
-      height: 180px;
+      width: 130px;
+      height: 130px;
     }
     .title{
       padding: 0% 5%;

@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (positionFromTop - window.innerHeight <= 0) {
                 element.classList.add('fade-up-active');
             }
+            
         }
         var fadeUpElements = document.querySelectorAll('#box-2');
 
@@ -19,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (positionFromTop - window.innerHeight <= 0) {
                 element.classList.add('fade-up-active');
             }
+            
         }
     });
 });
