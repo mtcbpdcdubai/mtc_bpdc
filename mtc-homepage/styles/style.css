@@ -234,7 +234,7 @@ label #sidebar_btn, label #cancel{
     font-size: 30px;
 }
 #scroll{
-  transform: translateY(80%);
+  transform: translateY(80px);
   transition: opacity 0.5s, transform 1.5s;
 }
 #scroll.fade-up-active {
@@ -625,6 +625,19 @@ padding: 0%;
       display: none;
   }
   
+  #scroll{
+    transform: translateY(0px);
+    transition: opacity 0.5s, transform 1.5s;
+  }
+  #box-1{ 
+    transform: translateX(0px);
+    transition: opacity 0.5s, transform 1s;
+  }
+ 
+  #box-2{
+    transform: translateX(0px);
+    transition: opacity 0.5s, transform 1s;
+  }
   .fullname{
     font-size: 50px;
   }

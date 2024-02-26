@@ -374,6 +374,24 @@ padding: 0%;
     #check:not(:checked) + label #cancel {
         display: none;
     }
+
+    #scroll{
+      transform: translateY(0px);
+      transition: opacity 0.5s, transform 1.5s;
+    }
+    
+    #box-1, #box-3, #box-5, #box-7{
+        
+        transform: translateX(0px);
+        transition: opacity 0.5s, transform 1s;
+    }
+    
+    #box-2, #box-4, #box-6{
+      
+      transform: translateX(0px);
+      transition: opacity 0.5s, transform 1s;
+    }
+    
     .heading{
       margin: 30px 0px;
       font-size: 3.5rem;
