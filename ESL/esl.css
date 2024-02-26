@@ -283,7 +283,7 @@ label #sidebar_btn, label #cancel{
     margin: 0px; /* Add spacing between the <li> elements (adjust as needed) */
   }
 .highlights img{
-    height: 500px;
+    height: 310px;
 }
 
 .highlights ul li img {
