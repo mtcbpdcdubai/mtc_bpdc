@@ -10,9 +10,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 element.classList.add('fade-up-active');
             }
             else {
+                element.style.setProperty('animation', 'none', 'important');
                 element.classList.remove('fade-up-active'); // Remove the class to stop the animation
-                element.style.transform = 'translateY(0)'; // Set the final translateY value
-                element.style.transform = 'translateX(0)'; // Set the final translateY value
+                element.style.transform = 'translateY(0) !important'; // Set the final translateY value
+                element.style.transform = 'translateX(0) !important'; // Set the final translateY value
             }
         }
     });

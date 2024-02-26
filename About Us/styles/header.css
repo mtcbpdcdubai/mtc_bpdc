@@ -639,6 +639,21 @@ body{
         flex-direction: column;
         align-items: center;
     }
+    .ellipse1, .ellipse3, .ellipse5, .ellipse7{
+    
+      transform: translateX(0px);
+      transition: opacity 0.5s, transform 1s;
+    }
+    
+    .ellipse2, .ellipse4, .ellipse6{
+      
+      transform: translateX(0px);
+      transition: opacity 0.5s, transform 1s;
+    }
+    #scroll{
+      transform: translateY(0px);
+      transition: opacity 0.5s, transform 1.5s;
+    }
 
     .person {
         width: 100%; 
