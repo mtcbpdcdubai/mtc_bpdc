@@ -193,6 +193,9 @@ label #sidebar_btn, label #cancel{
     padding: 40px;
     font-size: 1.7rem;
 }
+.content p{
+  text-align: justify;
+}
 
 .image {
     float: right;

@@ -527,10 +527,16 @@ label #sidebar_btn, label #cancel{
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      text-align: justify;
+    }
+
+    #about-box {
+      text-align: justify;
     }
     .info #about-box span {
       width: 80%;
       font-size: 1rem;
+      text-align: justify;
     }
     .info #about-box img {
       margin: 5% 0%;
