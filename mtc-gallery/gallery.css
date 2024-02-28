@@ -200,11 +200,13 @@ label #sidebar_btn, label #cancel{
 }*/
 .event-container {
   margin-bottom: 20px; /* Adjust as needed */
+  
 }
 
 .image-container {
   overflow-x: auto; /* Enable horizontal scrolling */
   margin-bottom: 10px; /* Adjust as needed */
+  
 }
 
 
