@@ -147,16 +147,9 @@ label #sidebar_btn, label #cancel{
     font-weight: 700;
     font-family: Inter;
     padding: 0% 10%;
-    animation: moveRightToLeft 3s ease-in-out  ;
+    
 }
-@keyframes moveRightToLeft {
-  0% {
-      transform: translateX(100%);
-  }
-  100% {
-      transform: translateX(0);
-  }
-}
+
 .about-container ul{
     list-style: none;
     position: absolute;
@@ -197,16 +190,9 @@ label #sidebar_btn, label #cancel{
     text-align: justify;
     padding: 2% 10%;
     color: rgb(139, 142, 144);
-    animation: moveLeftToRight 3s ease-in-out;
+    
 }
-@keyframes moveLeftToRight {
-  0% {
-      transform: translateX(-100%);
-  }
-  100% {
-      transform: translateX(0);
-  }
-}
+
 
 .web, .powerbi{
     height: 300px;
