@@ -9,8 +9,11 @@ const initSlider = () => {
   slideButtons.forEach(button => {
       button.addEventListener("click",()=>{
           const direction = button.id === "prev-slide"? -1: 1;
-          const scrollAmount = imageList.clientWidth*direction;
+          const scrollAmount = (imageList.clientWidth/2)*direction;
+          console.log(imageList.scrollLeft >= maxScrollLeft? 1 : 0)
+          console.log(maxScrollLeft)
           imageList.scrollBy({left:scrollAmount, behaviour:"smooth"});
+          imageList.scrollBy({ left: scrollAmount, behavior: "smooth" });
       })
   })
 

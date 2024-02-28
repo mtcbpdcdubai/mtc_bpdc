@@ -151,6 +151,7 @@ label #sidebar_btn, label #cancel{
   width: 100%;
   background-color: rgb(249, 210, 104);
   position: relative;
+  padding-bottom: 10px;
 }
 
 .explore-container span{
@@ -165,43 +166,47 @@ label #sidebar_btn, label #cancel{
   position: absolute;
   height: 80px;
   width: 80px;
-  top: 40%;
+  top: 30%;
   color: #ffffff;
   border: none;
   outline: none;
-  background-color: #000000;
-  font-size: 55px;
+  background-color: transparent;
+  font-size: 100px;
   cursor: pointer;
-  border-radius: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-70%);
+  z-index: 1;
 }
 .explore-container .slide-button:hover{
-  background-color: #ffffff;
+  background-color: transparent;
   color: #000000;
+  
 }
 
 .explore-container .slide-button#prev-slide{
-  left:-35px;
+  left:0px;
 }
 .explore-container .slide-button#next-slide{
-  right:-35px;
+  right:26px;
 }
+
 .explore-container .image_list{
   display: flex;
   grid-template-columns: repeat(9, 1fr);
   overflow-x: auto;
-  scrollbar-width: none;
+  
 }
 
 .explore-container .image_list .image-item{
-  height: 400px;
+  height: 275px;
+  width: 400px;
   object-fit: cover;
   position: relative;
 }
 .image_list{
-  padding: 3% 2%;
+  padding: 2% 2%;
   
 }
+
 
 .image{
   background-color: rgb(214, 212, 205);
@@ -219,7 +224,13 @@ label #sidebar_btn, label #cancel{
   flex-direction: column;
   align-items: center;
 }
-
+.image-title ul h1{
+  font-size: 2rem;
+}
+.image-title ul p{
+  text-align: justify;
+  font-size: 1.3rem;
+}
 .image-title ul li{
   margin: 0%;
   font-size: 1.5rem;
@@ -238,6 +249,34 @@ label #sidebar_btn, label #cancel{
   color: #000000;
   border:2px solid #000000 ;
 }
+#link-art{
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+}
+::-webkit-scrollbar {
+  width: 10px; /* Set the width of the scrollbar */
+  height: 7px;
+}
+
+/* Track styles (the area where the thumb doesn't cover) */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Set the background color of the track */
+}
+
+/* Handle styles (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+  background: #888; /* Set the color of the thumb */
+  border-radius: 10px; /* Set the border radius of the thumb */
+}
+
+/* Handle on hover styles */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Set the color of the thumb on hover */
+}
+
 /*
 footer
 */
@@ -549,8 +588,8 @@ padding: 0%;
     font-size: 2rem;
   }
   .image{
-    height: 70vh;
-    width: 95%;
+    height: auto;
+    width: 75%;
   }
   .image-title ul li h1{
     font-size: 2rem;
@@ -563,8 +602,11 @@ padding: 0%;
   }
   .image-title ul {
     margin: 0%;
-    height: 80vh;
+    height: auto;
     font-size: 2rem;
+  }
+  .explore-container .image_list {
+    scrollbar-width: none;
   }
 }
 
@@ -608,8 +650,8 @@ padding: 0%;
     height: auto;
   }
   .image-title ul li h1{
-    margin: 3% 1%; 
-    font-size: 1.2rem;
+    margin: 5% 1%; 
+    font-size: 1rem;
   }
   .image-title ul li p{
     margin: 3% 1%; 
@@ -620,5 +662,6 @@ padding: 0%;
     font-size: 0.8rem;
     padding: 2%;
   }
+  
   
 }
