@@ -236,6 +236,7 @@ label #sidebar_btn, label #cancel{
 .image-title a:hover{
   background-color: transparent;
   color: #000000;
+  border:2px solid #000000 ;
 }
 /*
 footer
