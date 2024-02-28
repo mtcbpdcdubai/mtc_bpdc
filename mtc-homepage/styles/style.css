@@ -285,7 +285,8 @@ label #sidebar_btn, label #cancel{
     text-align: center;
     font-family: Inter;
     font-style: italic;
-    color: rgb(79, 26, 26)
+    color: rgb(79, 26, 26);
+    text-align: justify;
 }
 
 .mlsa img{
