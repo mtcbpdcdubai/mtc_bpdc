@@ -509,6 +509,7 @@ padding: 0%;
   }
   .middle-section ul li img {
     height: 35vh;
+    width: auto;
     float: left;
   }
   .about-container li img{
@@ -674,6 +675,7 @@ padding: 0%;
   }
   .middle-section ul li img {
     height: 30vh;
+    width: auto;
     float: left;
   }
 
@@ -787,6 +789,7 @@ padding: 0%;
   }
   .middle-section ul li img {
     height: 40vh;
+    width: auto;
   }
   .middle-section ul li p {
     font-size: 1rem
@@ -803,7 +806,7 @@ padding: 0%;
   
   #mtc-logo{
     height: 30vh;
-    width: 100%;
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;

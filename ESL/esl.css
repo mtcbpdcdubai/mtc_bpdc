@@ -207,7 +207,9 @@ label #sidebar_btn, label #cancel{
     background-image: url("para-back.jpg");
   
     /* Set a specific height */
-    min-height: 500px; 
+
+    height: 70vh;
+    width: auto;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
