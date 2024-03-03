@@ -46,8 +46,12 @@
     <div class="container">
     <div id="gallery" class="gal"></div>
     </div>
-    <div id="popup">
-        <img src="" alt="" id="selectedImage">
+    <div class="popup">
+        <span>&times;</span>
+        <div class="popup-img">
+            <img src="" alt="" id="selectedImage">
+        </div>
+        
     </div>
 
 
@@ -80,6 +84,20 @@
             
         </div>
     </div>
+    
+        <script>
+        document.querySelectorAll('.image-container img').forEach(galleryImage => {
+            galleryImage.onclick =() =>{
+                document.querySelector('.popup').style.display = 'block';
+                document.querySelector('.popup img').src = galleryImage.getAttribute('src');
+            }
+            
+            });
+        document.querySelector('.popup span').onclick = () =>{
+            console.log('selected')
+            document.querySelector('.popup').style.display = 'none';
+        }
+        </script>
     
 </body>
 </html>
