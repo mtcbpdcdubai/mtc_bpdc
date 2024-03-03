@@ -240,11 +240,11 @@ body{
 
 .ellipse5{
     background: #7EB900;
-}/*
+}
 .ellipse6{
     background: #267fdd;
-}*/
-.ellipse6{
+}
+.ellipse7{
     background: #939394;
 }
 
@@ -536,7 +536,7 @@ body{
         height: 30vh;
     }
     
-    .ellipse2 ul, .ellipse3 ul, .ellipse5 ul{
+    .ellipse2 ul, .ellipse3 ul,.ellipse4 ul, .ellipse5 ul{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-content: center; /* Center items horizontally */
